@@ -1,0 +1,94 @@
+body {
+    font-family: "Verdana";
+    padding-top: 50px;
+}
+#root {
+	max-width: 410px;
+	margin: 0 auto;
+}
+.di {
+    text-align: left;
+    height: 16px;
+    width: 26%;
+    display: inline-block;
+    line-height: 16px;
+} 
+.input {
+	cursor: pointer;
+	vertical-align: middle;
+	height: 17px;
+	width: 17px;
+	background: #fff;
+}
+.dayN {
+	width: 12%;
+	text-align: center;
+	display: inline-block;
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+}
+.div {
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+	
+}
+.ddd {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+.ddd h1 {
+	margin: 3px;
+}
+.pickM {
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	top: 9px;
+	left: 14px;
+	z-index: 1500;
+	cursor: pointer;
+}
+.d {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2000px;
+	background: #fff;
+	z-index: 1000;
+	text-align: center;
+}
+.yes {
+	cursor: pointer;
+	display: flex;
+	width: 30%;
+	margin: 5px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+.conDiv {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 360px) {
+	.div {
+		font-size: 12px;
+	}
+}
