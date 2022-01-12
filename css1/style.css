@@ -1,5 +1,5 @@
 body {
-    font-family: "Verdana","Ubuntu",san-serif;
+    font-family: "Verdana","Ubuntu",sans-serif;
     padding-top: 50px;
 }
 #root {
@@ -12,6 +12,7 @@ body {
     width: 26%;
     display: inline-block;
     line-height: 16px;
+	color: #383839;
 } 
 .input {
 	cursor: pointer;
@@ -41,19 +42,40 @@ body {
 	background: #fff;
 	width: 100%;
 	height: 50px;
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 .ddd h1 {
 	margin: 3px;
 }
 .pickM {
 	width: 30px;
-	height: 30px;
-	position: fixed;
-	top: 9px;
-	left: 14px;
-	z-index: 1500;
+	height: 20px;
 	cursor: pointer;
+	margin-left: 15px;
+	display: flex;
+	align-items: center;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-color: #ccc;
+	box-sizing: border-box;
+	transition: .3s;
+}
+.pickM:hover {
+	height: 30px;
+}
+.pickM:active {
+	border-right: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	border-radius: 50%;
+}
+.pickM div {
+	width: 100%;
+	height: 2px;
+	background: #ccc;	
+	transition: .3s;
 }
 .d {
 	position: fixed;
@@ -85,6 +107,33 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-top: 10px;
+}
+.today {
+	background: #6CFF6C;
+}
+.ch {
+	background: #FFE635;
+}
+.today-ch {
+	background: linear-gradient(to right, #FFE635, #6CFF6C);
+}
+.cls-btn {
+	border: 1px solid #6CFF6C;
+	border-radius: 5px;
+	background: #6CFF6C;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px;
+	transition: .2s;
+	margin-right: 15px;
+}
+.cls-btn:hover {
+	opacity: .6;
+	cursor: pointer;
+}
+.cls-btn:active {
+	transform: translateY(3px);
+	opacity: 1;
 }
 
 @media screen and (max-width: 360px) {
